@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=League+Spartan:wght@700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="/assets/styles/index.css" />
+
+    <script src="/assets/js/index.js"></script>
+  </head>
+  <body>
+    <header id="header">
+      <h1>calc</h1>
+
+      <div id="theme">
+        <p>THEME</p>
+        <div id="position-theme">
+          <div id="position">
+            <ul class="grid">
+              <li>1</li>
+              <li>2</li>
+              <li>3</li>
+            </ul>
+          </div>
+          <button id="toggle">
+            <div id="toggle-state"></div>
+          </button>
+        </div>
+      </div>
+    </header>
+    <div id="container">
+      <section id="screen">
+        <input type="number" value="0" readonly />
+      </section>
+      <div id="keypad">
+        <div id="numbers">
+          <ul class="grid">
+            <li class="key-1 key-sm key">
+              <button data-type="number" data-value="7">7</button>
+            </li>
+            <li class="key-1 key-sm key">
+              <button data-type="number" data-value="8">8</button>
+            </li>
+            <li class="key-1 key-sm key">
+              <button data-type="number" data-value="9">9</button>
+            </li>
+            <li class="key-2 key-sm key">
+              <button data-type="operator" data-value="DEL">DEL</button>
+            </li>
+            <li class="key-1 key-sm key">
+              <button data-type="number" data-value="4">4</button>
+            </li>
+            <li class="key-1 key-sm key">
+              <button data-type="number" data-value="5">5</button>
+            </li>
+            <li class="key-1 key-sm key">
+              <button data-type="number" data-value="6">6</button>
+            </li>
+            <li class="key-1 key-sm key">
+              <button data-type="operator" data-value="+">+</button>
+            </li>
+            <li class="key-1 key-sm key">
+              <button data-type="number" data-value="1">1</button>
+            </li>
+            <li class="key-1 key-sm key">
+              <button data-type="number" data-value="2">2</button>
+            </li>
+            <li class="key-1 key-sm key">
+              <button data-type="number" data-value="3">3</button>
+            </li>
+            <li class="key-1 key-sm key">
+              <button data-type="operator" data-value="-">-</button>
+            </li>
+            <li class="key-1 key-sm key">
+              <button data-type="operator" data-value="">.</button>
+            </li>
+            <li class="key-1 key-sm key">
+              <button data-type="number" data-value="0">0</button>
+            </li>
+            <li class="key-1 key-sm key">
+              <button data-type="operator" data-value="/">/</button>
+            </li>
+            <li class="key-1 key-sm key">
+              <button data-type="operator" data-value="x">x</button>
+            </li>
+          </ul>
+        </div>
+        <div id="solution">
+          <ul class="grid">
+            <li class="key-2 key-lg key">
+              <button data-type="operator" data-value="reset">RESET</button>
+            </li>
+            <li class="key-3 key-lg key">
+              <button data-type="operator" data-value="=">=</button>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <script src="/assets/js/toggle.js"></script>
+  </body>
+</html>
